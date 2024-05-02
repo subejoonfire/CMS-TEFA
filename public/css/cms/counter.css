@@ -1,0 +1,117 @@
+.counter-cards-container {
+  width: 60%;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+.counter-cards-container > div {
+  width: 500px;
+  height: 500px;
+  padding: 10px;
+}
+.counter-card-left-container .counter-cards-header-container {
+  display: flex;
+  height: 200px;
+  width: 480px;
+  justify-content: space-between;
+  text-align: center;
+  margin: 10px;
+}
+.counter-card-left-container .counter-cards-header-container > div {
+  background-color: white;
+  width: 220px;
+  border-radius: 20px;
+}
+.counter-card-left-container .counter-cards-body-container {
+  display: flex;
+  justify-content: center;
+}
+.counter-card-left-container .counter-cards-body-container > div {
+  width: 97%;
+  height: 270px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: white;
+}
+.counter-card-right-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: space-around;
+}
+.counter-card-right-container > div {
+  transform: translateY(3px);
+  width: 100%;
+  height: 96%;
+  border-radius: 20px;
+  background-color: white;
+  text-align: center;
+}
+#contact {
+  background-color: #489bf9;
+}
+#photo {
+  background-color: #f57363;
+}
+#portofolio {
+  background-color: #00c097;
+}
+#client {
+  background-color: #f8cb54;
+}
+#service {
+  background-color: #c597fa;
+}
+#contact .counter-card-header-container h1,
+#photo .counter-card-header-container h1,
+#client .counter-card-header-container h1,
+#portofolio .counter-card-header-container h1,
+#service .counter-card-header-container h1 {
+  font-size: 15px;
+  text-align: end;
+  transform: translateX(-20px);
+}
+#contact .counter-card-body-container,
+#photo .counter-card-body-container,
+#client .counter-card-body-container,
+#portofolio .counter-card-body-container,
+#service .counter-card-body-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#contact .counter-card-body-container h1,
+#photo .counter-card-body-container h1,
+#client .counter-card-body-container h1,
+#portofolio .counter-card-body-container h1,
+#service .counter-card-body-container h1 {
+  font-size: 50px;
+}
+.counter-card-left-container .counter-cards-header-container > div,
+#contact,
+#photo,
+#portofolio,
+#client,
+#service {
+border: 3px solid black;
+}
+.welcome-sign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+.welcome-sign h1 {
+  font-family: "Outfit", sans-serif;
+  font-size: 100px;
+}
+.welcome-sign .selamat {
+  color: #1b1e27;
+}
+.welcome-sign .datang {
+  color: #070494;
+}

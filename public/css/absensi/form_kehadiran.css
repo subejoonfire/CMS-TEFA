@@ -1,0 +1,88 @@
+.body-container span {
+  font-size: 20px;
+}
+.body-container input {
+  width: 500px auto;
+  height: 30px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.my-button {
+  width: 90px;
+  height: 30px;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.nama-container {
+  display: flex;
+  justify-content: space-around;
+}
+.submit-button {
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  padding: 20px;
+}
+.login {
+  width: 100%;
+  text-align: center;
+}
+.login a {
+  color: black;
+  text-decoration: none;
+}
+.popup {
+  padding: 50px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 200px auto;
+  border-radius: 10px;
+  z-index: 2;
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.5),
+    0 1px 7px rgba(0, 0, 0, 0.08);
+  background-color: white;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.popup.show {
+  opacity: 1;
+  visibility: visible;
+}
+.head-popup {
+  text-align: center;
+  margin-top: -20px;
+}
+.body-popup {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.map {
+  height: 300px;
+  z-index: 1;
+  border-radius: 10px;
+}
+.keluar-button {
+  text-align: center;
+}
+.ucapanwkwk {
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .body-container select {
+    width: 200px;
+  }
+
+  .my-button {
+    margin-right: 0px;
+  }
+}

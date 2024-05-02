@@ -1,0 +1,52 @@
+.portfolio-body-container {
+  padding: 20px;
+}
+.portfolio-body-container table th a {
+  color: black;
+}
+.portfolio-body-container table th a:hover {
+  transition: all 0.1s ease-in;
+  color: blue;
+}
+.portfolio-body-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.portfolio-body-container table .number{
+  width: 100px;
+}
+.portfolio-body-container table .websitename{
+  width: 300px;
+}
+.portfolio-body-container table img{
+  border-radius: 10px;
+}
+.portfolio-body-container table th:first-child {
+  height: 50px;
+}
+.portfolio-body-container table th {
+  border-bottom: 1px solid rgb(179, 179, 179);
+  padding: 5px;
+}
+.portfolio-header-container{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.portfolio-header-container .add-button-container button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.portfolio-header-container .add-button-container button .material-symbols-outlined{
+    font-size: 25px;
+}
+.portfolio-header-container .add-button-container button .add-button-text{
+    margin-left: 5px;
+    font-family: 'Rubik', sans-serif;
+}

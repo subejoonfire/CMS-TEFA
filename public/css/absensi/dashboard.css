@@ -1,0 +1,39 @@
+table{
+    border-collapse: collapse;
+}
+th{
+    width: 50px;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+.logoutButton, .date{
+    color: black;
+    margin: 0 auto;
+    text-decoration: none;
+}
+.footer{
+    padding: 20px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+.dates{
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#toggleShow{
+    color: black;
+    cursor: pointer;
+}
+.kehadiran-container, .keluar-container, table{
+    width: 100%;
+}
+.table-container{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}

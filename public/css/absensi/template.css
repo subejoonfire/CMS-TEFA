@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+}
+.container {
+  width: 70% auto;
+  height: 90% auto;
+  margin: 0 auto;
+  margin-top: 60px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5), 0 1px 7px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+}
+.head-container {
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+.body-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.my-button {
+  width: 90px;
+  height: 30px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+}

@@ -1,0 +1,92 @@
+CRITICAL - 2024-04-25 01:54:49 --> ErrorException: include(layouts/sidebar.php): Failed to open stream: No such file or directory
+in APPPATH\Views\cms\dashboard.php on line 13.
+ 1 APPPATH\Views\cms\dashboard.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(layouts/sidebar.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\cms-tefa2\\app\\Views\\cms\\dashboard.php', 13)
+ 2 APPPATH\Views\cms\dashboard.php(13): include()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\cms-tefa2\\app\\Views\\cms\\dashboard.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('cms/dashboard', [], true)
+ 6 APPPATH\Controllers\CMSRoutesController.php(20): view('cms/dashboard')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CMSRoutesController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CMSRoutesController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\cms-tefa2\\public\\index.php')
+ERROR - 2024-04-25 05:17:24 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\cms-tefa2\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\cms-tefa2\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cms_tefa', 3306, '', 0)
+#1 C:\xampp\htdocs\cms-tefa2\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\cms-tefa2\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\cms-tefa2\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\cms-tefa2\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\cms-tefa2\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\cms-tefa2\app\Controllers\CMSController.php(24): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\cms-tefa2\system\CodeIgniter.php(941): App\Controllers\CMSController->loginAction()
+#8 C:\xampp\htdocs\cms-tefa2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CMSController))
+#9 C:\xampp\htdocs\cms-tefa2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\cms-tefa2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\cms-tefa2\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\cms-tefa2\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\cms-tefa2\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\cms-tefa2\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\cms-tefa2\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\cms-tefa2\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\cms-tefa2\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\cms-tefa2\app\Controllers\CMSController.php(24): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\cms-tefa2\system\CodeIgniter.php(941): App\Controllers\CMSController->loginAction()
+#7 C:\xampp\htdocs\cms-tefa2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CMSController))
+#8 C:\xampp\htdocs\cms-tefa2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\cms-tefa2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\cms-tefa2\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-04-25 05:17:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `akun`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\CMSController.php(24): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CMSController->loginAction()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CMSController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\cms-tefa2\\public\\index.php')
+CRITICAL - 2024-04-25 06:54:01 --> ErrorException: include(layouts/counter.php.php): Failed to open stream: No such file or directory
+in APPPATH\Views\cms\dashboard.php on line 16.
+ 1 APPPATH\Views\cms\dashboard.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(layouts/counter.php.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\cms-tefa2\\app\\Views\\cms\\dashboard.php', 16)
+ 2 APPPATH\Views\cms\dashboard.php(16): include()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\cms-tefa2\\app\\Views\\cms\\dashboard.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('cms/dashboard', [], true)
+ 6 APPPATH\Controllers\CMSRoutesController.php(27): view('cms/dashboard')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CMSRoutesController->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CMSRoutesController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\cms-tefa2\\public\\index.php')
+CRITICAL - 2024-04-25 12:00:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "cms/client.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cms/client.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('cms/client', [], true)
+ 3 APPPATH\Controllers\CMSRoutesController.php(43): view('cms/client')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CMSRoutesController->client()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CMSRoutesController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\cms-tefa2\\public\\index.php')
+CRITICAL - 2024-04-25 12:01:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "cms/client.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cms/client.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('cms/client', [], true)
+ 3 APPPATH\Controllers\CMSRoutesController.php(43): view('cms/client')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CMSRoutesController->client()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CMSRoutesController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\cms-tefa2\\public\\index.php')

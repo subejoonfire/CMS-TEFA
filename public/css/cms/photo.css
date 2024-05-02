@@ -1,0 +1,52 @@
+.photo-body-container {
+  padding: 20px;
+}
+.photo-body-container table th a {
+  color: black;
+}
+.photo-body-container table th a:hover {
+  transition: all 0.1s ease-in;
+  color: blue;
+}
+.photo-body-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.photo-body-container table .number{
+  width: 100px;
+}
+.photo-body-container table .websitename{
+  width: 300px;
+}
+.photo-body-container table img{
+  border-radius: 10px;
+}
+.photo-body-container table th:first-child {
+  height: 50px;
+}
+.photo-body-container table th {
+  border-bottom: 1px solid rgb(179, 179, 179);
+  padding: 5px;
+}
+.photo-header-container{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.photo-header-container .add-button-container button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.photo-header-container .add-button-container button .material-symbols-outlined{
+    font-size: 25px;
+}
+.photo-header-container .add-button-container button .add-button-text{
+    margin-left: 5px;
+    font-family: 'Rubik', sans-serif;
+}

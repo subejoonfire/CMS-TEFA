@@ -1,0 +1,21 @@
+.contact-body-container {
+  padding: 20px;
+}
+.contact-body-container table th a {
+  color: black;
+}
+.contact-body-container table th a:hover {
+  transition: all 0.1s ease-in;
+  color: red;
+}
+.contact-body-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.contact-body-container table th:first-child {
+  height: 50px;
+}
+.contact-body-container table th {
+  border-bottom: 1px solid rgb(179, 179, 179);
+  padding: 5px;
+}
